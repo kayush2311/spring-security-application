@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -6,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link th:href="@{/css/style.css}" rel="stylesheet" href="../css/style.css"/>
+    <c:url value="/css/style.css" var="jstlCss" />
+	<link href="${jstlCss}" rel="stylesheet" />
 </head>
 
 
